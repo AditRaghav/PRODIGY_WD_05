@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="text-center d-flex align-items-center justify-content-center"
+    style="height: 100vh"
+  >
+    <div class="container">
+      <h1 class="mb-4 title">Weather App</h1>
+      <p class="mb-3">
+        Enter a location to get the current weather information
+      </p>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          id="cityInput"
+          name="cityInput"
+          class="form-control"
+          placeholder="Enter location"
+        />
+        <div class="input-group-append">
+          <button
+            id="getWeatherBtn"
+            class="btn btn-secondary get-weather"
+            onclick="fetchWeather()"
+          >
+            Get Weather
+          </button>
+        </div>
+      </div>
+      <h5 id="error"></h5>
+      <h3 id="city" class="title"></h3>
+      <div id="weather"></div>
+      <!-- <div id="weatherInfo" class="weather-info mt-5">
+            <h3 id="location" class="mb-3"></h3>
+            <img id="weatherIcon" class="img-fluid mb-3" src="" alt="Weather Icon" />
+            <p id="description" class="lead mb-2"></p>
+            <p id="temperature" class="h4 mb-2"></p>
+            <p id="humidity" class="mb-2"></p>
+            <p id="windSpeed"></p>
+        </div> -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
